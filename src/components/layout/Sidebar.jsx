@@ -111,6 +111,21 @@ const Sidebar = ({ open, onClose }) => {
           ))}
         </div>
 
+        <div className="topbar-profile sidebar-profile">
+          <div className="avatar">
+            AK
+          </div>
+
+          <div className="topbar-user-details">
+            <strong>{user.name}</strong>
+            <small>
+              {user.role === "admin"
+                ? "Administrator"
+                : "Student account"}
+            </small>
+          </div>
+        </div>
+
       </aside>
     </>
   );
